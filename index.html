@@ -1,224 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>website </title> 
-<style>
-    div{
-    background-color: #627254;
-    color: #fff;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-header {
-    background-color: #627254;
-    color: #fff;
-    padding: 20px;
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-}
-h1 {
-    margin: 0;
-    font-size: 24px;
-}
-nav {
-    display: flex;
-    align-items: center;
-}
-nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-nav a:hover {
-    color: #ffd700;
-}
-input[type="text"] {
-    padding: 10px;
-    border-radius: 25px;
-    border: none;
-    margin-right: 10px;
-    width: 200px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-input[type="submit"] {
-    padding: 10px 20px;
-    border-radius: 25px;
-    background-color: #ffd700;
-    color: #333;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-input[type="submit"]:hover {
-    background-color: #ffa500;
-}
-
-/* Footer styles */
-footer {
-    background-color: #76885B;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    margin-top: 5px;
-}
- /* main content styles */
- body{
-    margin: 0%;
-    border: 0px;
-    background-color: #eeeeee;
- }
-#main{
-    height: 1200px;
-    background-color: #DDDDDD;
-    color: white;
-}
-
-#row1{
-    justify-content: space-evenly;
-    display: flex;
-    background-color: #DDDDDD;
-}
-#row2{
-    justify-content: space-evenly;
-    display: flex;
-    background-color: #DDDDDD;
-}
-#row3{
-    justify-content: space-evenly;
-    display: flex;
-    background-color: #DDDDDD;
-}
-.item{
-    height: 350px;
-    width: 250px;
-    background-color: #fff;
-    color: black;
-    margin-top: 10px;
-    border: #333 2px solid;
-    margin-bottom: 35px;
-}
-.description{
-    height: 150px;
-    width: 249px;
-    background-color: black;
-    color: white;
-    border: #333 1px solid;
-    align-items: end;
-    margin-top: 165px;
-    opacity: 0;;
-}
-.description:hover{
-    opacity: 1;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eeeeee;
+        }
+        /* Header styles */
+        header {
+            background-color: #627254;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        /* Main content styles */
+        #main {
+            padding: 20px;
+        }
+        #main .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .item {
+            flex: 0 0 calc(33.33% - 20px);
+            background-color: #fff;
+            color: black;
+            margin-bottom: 20px;
+            border: #333 2px solid;
+            text-align: center;
+        }
+        .item:hover .description {
+            opacity: 1;
+        }
+        .description {
+            height: 50px;
+            background-color: black;
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        /* Footer styles */
+        footer {
+            background-color: #76885B;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Media queries */
+        @media screen and (max-width: 768px) {
+            nav a {
+                font-size: 14px;
+            }
+            .item {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .item {
+                flex-basis: calc(100% - 20px);
+            }
+        }
+    </style>
 </head>
 <body>
 
-    <div>WEBSITE NAME</div>
-<header>
-    <h1>Website Logo</h1>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Cart</a>
-        <a href="#">Account</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-    <form action="#" method="get">
-        <input type="text" placeholder="Search...">
-        <input type="submit" value="Search">
-    </form>
-</header>
-<div id="main">
-<div id="row1">
-    <div class="item"> 
-        item 1 
-        <div class="description">
-            description
+    <header>
+        <h1>Website Logo</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Cart</a>
+            <a href="#">Account</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <form action="#" method="get">
+            <input type="text" placeholder="Search...">
+            <input type="submit" value="Search">
+        </form>
+    </header>
+
+    <div id="main">
+        <div class="row">
+            <div class="item">
+                item 1
+                <div class="description">description</div>
             </div>
+            <!-- Repeat item structure for other items -->
+        </div>
+        <!-- Repeat row structure for other rows -->
     </div>
-    <div class="item">
-        item 2
-        <div class="description">
-        description
-            </div>
-    </div>
-    <div class="item">
-        item 3
-        <div class="description">
-            description
-            </div>
-    </div>
-    <div class="item">
-        item 4
-        <div class="description">
-            description
-            </div>
-    </div>
-</div>
-<div id="row2">
-    <div class="item"> 
-        item 5 
-        <div class="description">
-            description
-            </div>
-    </div>
-    <div class="item">
-        item 6
-        <div class="description">
-        description
-            </div>
-    </div>
-    <div class="item">
-        item 7
-        <div class="description">
-            description
-            </div>
-    </div>
-    <div class="item">
-        item 8
-        <div class="description">
-            description
-            </div>
-    </div>
-</div>
-<div id="row3">
-    <div class="item"> 
-        item 9 
-        <div class="description">
-            description
-            </div>
-    </div>
-    <div class="item">
-        item 10
-        <div class="description">
-        description
-            </div>
-    </div>
-    <div class="item">
-        item 11
-        <div class="description">
-            description
-            </div>
-    </div>
-    <div class="item">
-        item 12
-        <div class="description">
-            description
-            </div>
-    </div>
-</div>
-</div>
-<footer>
-    <p>&copy; 2024 Website Name. All rights reserved.</p>
-</footer>
+
+    <footer>
+        <p>&copy; 2024 Website Name. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
