@@ -1,12 +1,224 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>SOCIAL MEDIA</title>
-</head bgcolor="a7cd55">
-    
+<title>website </title> 
+<style>
+    div{
+    background-color: #627254;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+header {
+    background-color: #627254;
+    color: #fff;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffd700;
+}
+input[type="text"] {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    margin-right: 10px;
+    width: 200px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #ffa500;
+}
+
+/* Footer styles */
+footer {
+    background-color: #76885B;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+ /* main content styles */
+ body{
+    margin: 0%;
+    border: 0px;
+    background-color: #eeeeee;
+ }
+#main{
+    height: 1200px;
+    background-color: #DDDDDD;
+    color: white;
+}
+
+#row1{
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #DDDDDD;
+}
+#row2{
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #DDDDDD;
+}
+#row3{
+    justify-content: space-evenly;
+    display: flex;
+    background-color: #DDDDDD;
+}
+.item{
+    height: 350px;
+    width: 250px;
+    background-color: #fff;
+    color: black;
+    margin-top: 10px;
+    border: #333 2px solid;
+    margin-bottom: 35px;
+}
+.description{
+    height: 150px;
+    width: 249px;
+    background-color: black;
+    color: white;
+    border: #333 1px solid;
+    align-items: end;
+    margin-top: 165px;
+    opacity: 0;;
+}
+.description:hover{
+    opacity: 1;
+}
+</style>
+</head>
 <body>
-<center> <h2>SOCIAL MEDIA<h2>
-<button> <img src=https://logohistory.net/wp-content/uploads/2022/10/Facebook-Logo-2019.png width=75 height=50> <a href=https://www.facebook.com>FACEBOOK</a> </button>
-<button> <img src=https://t3.ftcdn.net/jpg/05/07/46/84/240_F_507468479_HfrpT7CIoYTBZSGRQi7RcWgo98wo3vb7.jpg width=75 height=50> <a href=https://www.youtube.com>YOUTUBE</a> </button>
-<button> <img src=https://t3.ftcdn.net/jpg/03/76/12/18/240_F_376121893_uRNqv00YX0Jr2NrWYQvRRhuDSmSEAJMv.jpg width=75 height=50> <a href=https://www.twitter.com>TWITTER</a> </button>
+
+    <div>WEBSITE NAME</div>
+<header>
+    <h1>Website Logo</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cart</a>
+        <a href="#">Account</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <form action="#" method="get">
+        <input type="text" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+</header>
+<div id="main">
+<div id="row1">
+    <div class="item"> 
+        item 1 
+        <div class="description">
+            description
+            </div>
+    </div>
+    <div class="item">
+        item 2
+        <div class="description">
+        description
+            </div>
+    </div>
+    <div class="item">
+        item 3
+        <div class="description">
+            description
+            </div>
+    </div>
+    <div class="item">
+        item 4
+        <div class="description">
+            description
+            </div>
+    </div>
+</div>
+<div id="row2">
+    <div class="item"> 
+        item 5 
+        <div class="description">
+            description
+            </div>
+    </div>
+    <div class="item">
+        item 6
+        <div class="description">
+        description
+            </div>
+    </div>
+    <div class="item">
+        item 7
+        <div class="description">
+            description
+            </div>
+    </div>
+    <div class="item">
+        item 8
+        <div class="description">
+            description
+            </div>
+    </div>
+</div>
+<div id="row3">
+    <div class="item"> 
+        item 9 
+        <div class="description">
+            description
+            </div>
+    </div>
+    <div class="item">
+        item 10
+        <div class="description">
+        description
+            </div>
+    </div>
+    <div class="item">
+        item 11
+        <div class="description">
+            description
+            </div>
+    </div>
+    <div class="item">
+        item 12
+        <div class="description">
+            description
+            </div>
+    </div>
+</div>
+</div>
+<footer>
+    <p>&copy; 2024 Website Name. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
